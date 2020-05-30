@@ -1,9 +1,9 @@
 currentBuild.displayName="color_login_app_v13.0-#"+currentBuild.number
 pipeline{
     agent any
-    options {
-      timeout(time: 1, unit: 'MINUTES') 
-         }
+ //   options {
+   //   timeout(time: 1, unit: 'MINUTES') 
+    //     }
  
     stages{
         stage("Checkout-SCM")
