@@ -27,6 +27,7 @@ pipeline{
                  sh label: '', script: 'mvn package sonar:sonar'
                  echo "archeiving Artifacts" 
                  archiveArtifacts '**/*.war'
+                  }     
             }
         }
             stage("Quality Gate") {
