@@ -2,7 +2,7 @@ currentBuild.displayName="color_login_app_v13.0-#"+currentBuild.number
 pipeline{
     agent any
     options {
-      timeout(time: 1, unit: 'HOURS') 
+      timeout(time: 1, unit: 'MINUTES') 
          }
  
     stages{
