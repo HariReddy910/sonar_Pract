@@ -34,17 +34,7 @@ pipeline{
                 sh label: '', script: 'scp /var/lib/jenkins/workspace/color_login_app_v13.0/webapp/target/webapp.war ubuntu@172.31.26.148:/var/lib/tomcat9/webapps/color_login_app_v13.0.war'
             }
         }
-           stage('Sonarqube') {
-    environment {
-        scannerHome = tool 'SonarQubeScanner'
-    }    steps {
-        withSonarQubeEnv('sonarqube') {
-            sh "${scannerHome}/bin/sonar-scanner"
-        }        timeout(time: 10, unit: 'MINUTES') {
-            waitForQualityGate abortPipeline: true
-        }
-    }
-}
+       
            stage('uploading artifacts to Jfrog artfactory') {
            steps {
               script { 
