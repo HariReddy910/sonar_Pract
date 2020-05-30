@@ -36,8 +36,7 @@ pipeline{
               }
             }
           }
-        }
-      }
+       
         stage("Deployment-AppServer"){
             steps{
                 echo "hi"
