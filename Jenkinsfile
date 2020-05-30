@@ -16,7 +16,7 @@ pipeline{
                 extensions: [[$class: 'CleanBeforeCheckout']], 
                 submoduleCfg: [], 
                 userRemoteConfigs: [[credentialsId: 'github_credentials', 
-                url: 'https://github.com/HariReddy910/isolvers.git']]])
+                url: 'https://github.com/HariReddy910/sonar_Pract.git']]])
                 echo "Download finished form SCM"
             }
         }
